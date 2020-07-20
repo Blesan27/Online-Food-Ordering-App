@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ListView
+        android:id="@+id/cart_list_view"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFF"
+        android:dividerHeight="6dp"/>
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounde_edge"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Order"
+        android:textColor="#FFF"
+        android:textSize="16dp"/>
+
+
+    <!-- Empty view is only visible when the list has no items. -->
+    <RelativeLayout
+        android:id="@+id/cart_items_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/nocart"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cart_empty"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No items in Cart"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/nocart"
+            android:textColor="#FF0000"/>
+    </RelativeLayout>
+
+</RelativeLayout>

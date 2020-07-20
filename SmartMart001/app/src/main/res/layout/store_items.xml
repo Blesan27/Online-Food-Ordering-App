@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/list_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/store_items_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="SmartMart"
+        app:titleTextColor="#FFFFFF"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:menu="@menu/settings_menu">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/store_items_list_view"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/list_background"
+        android:dividerHeight="6dp"/>
+    </LinearLayout>
+    <!-- Empty view is only visible when the list has no items. -->
+
+</RelativeLayout>

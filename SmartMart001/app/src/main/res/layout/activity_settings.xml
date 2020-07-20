@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    tools:context=".Settings">
+
+    <TextView
+        android:layout_width="12dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="12dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/settings_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/header_text_icon"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/settings_header"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toRightOf="@id/settings_header"
+                android:text="Name@SmartMart.com" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Settings_linear_bar"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:paddingLeft="32dp"
+                android:text="Account Settings"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ManageAccounts">
+
+                <ImageView
+                    style="@style/Settings_Linear_Image"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/ic_accounts" />
+
+                <TextView
+                    style="@style/Settings_linear_bar"
+                    android:layout_width="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="Manage Accounts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/Settings_Linear_Image"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/ic_change_password" />
+
+                <TextView
+                    style="@style/Settings_linear_bar"
+                    android:layout_width="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="Change Password" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/Settings_Linear_Image"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/ic_privacy" />
+
+                <TextView
+                    style="@style/Settings_linear_bar"
+                    android:layout_width="match_parent"
+                    android:background="#FFFFFF"
+                    android:text="Prvacy" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/Settings_Linear_Image"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/logout" />
+
+                <TextView
+                    style="@style/Settings_linear_bar"
+                    android:layout_width="match_parent"
+                    android:background="#FFFFFF"
+                    android:onClick="Logout"
+                    android:text="Logout" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Settings_linear_bar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="32dp"
+            android:text="About Us?"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>

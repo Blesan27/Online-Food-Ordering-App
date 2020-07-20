@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cart"
+            android:checkable="true"
+            android:icon="@drawable/supermarket"
+            android:title="Cart" />
+
+        <item
+            android:id="@+id/stores"
+            android:checkable="true"
+            android:icon="@drawable/bag"
+            android:title="Stores" />
+        <item
+            android:id="@+id/history"
+            android:checkable="true"
+            android:icon="@drawable/history"
+            android:title="History" />
+    </group>
+
+    <item android:title="Actions">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="share"/>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>

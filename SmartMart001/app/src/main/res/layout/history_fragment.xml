@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ListView
+        android:id="@+id/history_list_view"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFF"
+        android:dividerHeight="6dp"/>
+
+
+    <!-- Empty view is only visible when the list has no items. -->
+    <TextView
+        android:id="@+id/history_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No History"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+</RelativeLayout>

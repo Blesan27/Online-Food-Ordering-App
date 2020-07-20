@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background">
+
+    <ListView
+        android:id="@+id/store_list_view"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/list_background"
+        android:dividerHeight="6dp"/>
+
+    <!-- Empty view is only visible when the list has no items. -->
+    <RelativeLayout
+        android:id="@+id/store_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/store_empty"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Stores"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>
